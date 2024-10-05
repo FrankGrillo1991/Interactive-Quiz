@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const questionElement = document.getElementById('question');
     const optionsElement = document.getElementById('options');
-    const nextElement = document.getElementById('next-button');
+    const nextButton = document.getElementById('next-button');
     let currentQuestionIndex = 0;
 
     const questions = [
