@@ -26,5 +26,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 
+    function selectOption(selected) {
+        const question = questions[currentQuestionIndex];
+        if (selected === question.answer) {
+            alert('Correct!');
+        } else {
+            alert('Wrong!');
+        }
+    }
+
     
 })
