@@ -12,4 +12,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
         },
         // More questions...
     ];
+
+    function loadQuestion(questionIndex) {
+        const question = questions[questionIndex];
+        questionElement.textContent = question.question;
+        optionsElement.innerHTML = '';
+        question.options.forEach(option => {
+            const button = document.createElement('button');
+            button.textContent = option;
+            button.classList.add('btn', 'btn-option');
+            button.onclick = () => selectOption(option);
+            optionsElement.appendChild(button);
+        });
+    }
+
+    
 })
