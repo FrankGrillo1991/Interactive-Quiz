@@ -4,5 +4,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const nextElement = document.getElementById('next-button');
     let currentIndex = 0;
 
-    
+    const questions = [
+        {
+            question: "What is the capital of France?",
+            options: ["New York", "London", "Paris", "Dubai"],
+            answer: "paris"
+        },
+        // More questions...
+    ];
 })
