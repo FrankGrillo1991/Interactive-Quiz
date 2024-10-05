@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         {
             question: "What is the capital of France?",
             options: ["New York", "London", "Paris", "Dubai"],
-            answer: "paris"
+            answer: "Paris"
         },
         // More questions...
     ];
