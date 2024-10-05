@@ -35,5 +35,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    
-})
+    nextButton.addEventListener('click', () => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+            loadQuestion(currentQuestionIndex);
+        } else {
+            alert('Quiz completed!');
+            currentQuestionIndex = 0;
+        }
+        loadQuestion(currentQuestionIndex);
+    });
+
+    // Load the first question
+    loadQuestion(currentQuestionIndex);
+});
